@@ -1,18 +1,18 @@
-name: "workflow-sample"
+name: "CI Pipeline"
 
 on: 
  push:
   branches:
-   - master
+  - master
    
 jobs:
- code_deploy_automation:
-  name: Code Deploy Automation
+ build-and-test:
+  name: Build and test
   runs-on: ubuntu-latest   
   steps: 
-   - name: "Print hello world"   
-     run: echo "Hello world"  
-   - name: "Print current date"
-     run: date      
+  - name: "Print hello world"   
+    run: echo "Hello world"  
+  - name: "Print current date"
+    run: date      
   
   
